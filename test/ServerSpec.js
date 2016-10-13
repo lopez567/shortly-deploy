@@ -2,16 +2,19 @@ var request = require('supertest');
 var express = require('express');
 var expect = require('chai').expect;
 var app = require('../server-config.js');
+var util = require('../lib/utility.js');
 
-var db = require('../app/config');
-var User = require('../app/models/user');
-var Link = require('../app/models/link');
+var database = require('../app/config');
+
+var db = database.db;
+var User = database.User;
+var Link = database.Url;
 
 /////////////////////////////////////////////////////
 // NOTE: these tests are designed for mongo!
 /////////////////////////////////////////////////////
 
-xdescribe('', function() {
+describe('', function() {
 
   beforeEach(function(done) {
     // Log out currently signed in user
@@ -97,6 +100,8 @@ xdescribe('', function() {
           baseUrl: 'http://127.0.0.1:4568',
           visits: 0
         });
+
+        link.code = util.smallify(link.url);
 
         link.save(function() {
           done();
@@ -210,7 +215,7 @@ xdescribe('', function() {
     beforeEach(function(done) {
       new User({
         'username': 'Phillip',
-        'password': 'Phillip'
+        'password': util.hashify('Phillip')
       }).save(function() {
         done();
       });
