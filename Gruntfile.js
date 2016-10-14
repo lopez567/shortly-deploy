@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('upload', function(n) {
     if (grunt.option('prod')) {
-      grunt.task.run(['deploy', 'shell']);
+      grunt.task.run(['build', 'shell']);
     } else {
       grunt.task.run([ 'server-dev' ]);
     }

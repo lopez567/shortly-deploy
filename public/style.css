@@ -1,7 +1,16 @@
+html {
+  height:100%;
+}
+
 body {
+  height:100%;
+  width:100%;
   margin: 0;
-  margin-top: 10px;
   font-family: arial, sans-serif;
+  background-image: url('http://revelwallpapers.net/d/377078716E35573578705F656B6136526B5A4E79737476633470702D65773D3D/tropical-paradise-beach-palms-tree-sunshine-hd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
 }
 
 a {
@@ -12,13 +21,26 @@ a {
 
 h1 {
   font-style: italic;
-  margin-bottom: 10px;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  line-height:150px;
+  padding-left:20px;
+  font-size: 70px;
+  letter-spacing: 4px;
+  margin:0px;
+  height:150px;
+  color:white;
+  background: #326dba ; /* Old browsers */
+  background: -moz-linear-gradient(top,  #326dba  0%, #1eed7b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #326dba  0%,#1eed7b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #326dba  0%,#1eed7b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#326dba ', endColorstr='#1eed7b',GradientType=0 ); /* IE6-9 */
 }
+
 
 .navigation {
   width: 100%;
   height: 40px;
-  background-color: #eee;
+  color: white;
 }
 
 .navigation ul {
@@ -30,9 +52,22 @@ h1 {
 .navigation li {
   float: left;
 }
+.navigation li a{
+  color:white;
+}
 
 .navigation .logout {
   float: right;
+  color:white;
+}
+
+.logout:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#326dba+0,1eed7b+1,1eed7b+18,1eed7b+18,1eed7b+50,1eed7b+79,326dba+99&0.7+41,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(50,109,186,0.7) 0%, rgba(30,237,123,0.7) 1%, rgba(30,237,123,0.7) 18%, rgba(30,237,123,0.7) 41%, rgba(30,237,123,0.59) 50%, rgba(30,237,123,0.25) 79%, rgba(50,109,186,0.01) 99%, rgba(50,109,186,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(50,109,186,0.7) 0%,rgba(30,237,123,0.7) 1%,rgba(30,237,123,0.7) 18%,rgba(30,237,123,0.7) 41%,rgba(30,237,123,0.59) 50%,rgba(30,237,123,0.25) 79%,rgba(50,109,186,0.01) 99%,rgba(50,109,186,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(50,109,186,0.7) 0%,rgba(30,237,123,0.7) 1%,rgba(30,237,123,0.7) 18%,rgba(30,237,123,0.7) 41%,rgba(30,237,123,0.59) 50%,rgba(30,237,123,0.25) 79%,rgba(50,109,186,0.01) 99%,rgba(50,109,186,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3326dba', endColorstr='#00326dba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-radius:20px;
 }
 
 .navigation li a , .logout {
@@ -45,11 +80,26 @@ h1 {
 }
 
 .navigation li a:hover {
-  background-color: #ddd;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#326dba+0,1eed7b+1,1eed7b+18,1eed7b+18,1eed7b+50,1eed7b+79,326dba+99&0.7+41,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(50,109,186,0.7) 0%, rgba(30,237,123,0.7) 1%, rgba(30,237,123,0.7) 18%, rgba(30,237,123,0.7) 41%, rgba(30,237,123,0.59) 50%, rgba(30,237,123,0.25) 79%, rgba(50,109,186,0.01) 99%, rgba(50,109,186,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(50,109,186,0.7) 0%,rgba(30,237,123,0.7) 1%,rgba(30,237,123,0.7) 18%,rgba(30,237,123,0.7) 41%,rgba(30,237,123,0.59) 50%,rgba(30,237,123,0.25) 79%,rgba(50,109,186,0.01) 99%,rgba(50,109,186,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(50,109,186,0.7) 0%,rgba(30,237,123,0.7) 1%,rgba(30,237,123,0.7) 18%,rgba(30,237,123,0.7) 41%,rgba(30,237,123,0.59) 50%,rgba(30,237,123,0.25) 79%,rgba(50,109,186,0.01) 99%,rgba(50,109,186,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3326dba', endColorstr='#00326dba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-radius:20px
 }
 
 .navigation li a.selected {
-  background-color: #ccc;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+  color:white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#326dba+0,326dba+0,1eed7b+79,1eed7b+79,1eed7b+88 */
+background: rgb(50,109,186); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(50,109,186,1) 0%, rgba(50,109,186,1) 0%, rgba(30,237,123,1) 79%, rgba(30,237,123,1) 79%, rgba(30,237,123,1) 88%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(50,109,186,1) 0%,rgba(50,109,186,1) 0%,rgba(30,237,123,1) 79%,rgba(30,237,123,1) 79%,rgba(30,237,123,1) 88%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(50,109,186,1) 0%,rgba(50,109,186,1) 0%,rgba(30,237,123,1) 79%,rgba(30,237,123,1) 79%,rgba(30,237,123,1) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#326dba', endColorstr='#1eed7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 #container {
@@ -58,14 +108,42 @@ h1 {
 }
 
 .link {
+  transition: transform 1s;
   clear: both;
   margin-bottom: 5px;
   padding: 5px;
   min-height: 50px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeffee+1,fcfcfc+99&0.6+0,0.2+99 */
+background: -moz-linear-gradient(left,  rgba(238,255,238,0.6) 0%, rgba(238,255,238,0.6) 1%, rgba(252,252,252,0.2) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(238,255,238,0.6) 0%,rgba(238,255,238,0.6) 1%,rgba(252,252,252,0.2) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(238,255,238,0.6) 0%,rgba(238,255,238,0.6) 1%,rgba(252,252,252,0.2) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99eeffee', endColorstr='#33fcfcfc',GradientType=1 ); /* IE6-9 */
+
 }
 
 .link:hover {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   background-color: #efe;
+}
+
+@keyframes slide {
+   0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-1deg);
+  }
+   50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .link img {
@@ -134,4 +212,44 @@ form input[type=text], form input[type=password] {
 
 .creator .message {
   clear: both;
+}
+
+.info a {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes pulse {
+   0% {
+    font-size: 14px;
+    color: #326dba;
+  }
+   50% {
+    font-size: 16px;
+    color: #1eed7b;
+  }
+  100% {
+    font-size: 14px;
+    color: #326dba;
+  }
+}
+
+@keyframes rotate {
+   0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.link .visits:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
